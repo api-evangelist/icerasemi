@@ -1,8 +1,23 @@
 aid: icerasemi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/icerasemi.png
 name: icerasemi
-description: icerasemi is a company surfaced as a portfolio company of balderton-capital and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Icera Semiconductor (icerasemi.com) was a British fabless semiconductor company known for
+  soft-modem and baseband processor chipsets for wireless devices, and was acquired by NVIDIA in 2011.
+  It was surfaced as a portfolio lead of balderton-capital and added to the API Evangelist network as a
+  stub for enrichment. The company no longer operates independently; as of this enrichment pass the
+  domain www.icerasemi.com returns a shared-hosting error page with no live product, developer, API, or
+  documentation surface, so there is nothing beyond domain-level metadata to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/icerasemi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+x-status: defunct-acquired
 tags:
 - Company
+- Semiconductor
+- Modem
+- Wireless
+- Fabless
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/icerasemi-domain-security.yml
 - type: Website
   url: http://www.icerasemi.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
