@@ -12,12 +12,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/icerasemi.png
 name: icerasemi
-description: Icera Semiconductor (icerasemi.com) was a British fabless semiconductor company known for
-  soft-modem and baseband processor chipsets for wireless devices, and was acquired by NVIDIA in 2011.
-  It was surfaced as a portfolio lead of balderton-capital and added to the API Evangelist network as a
-  stub for enrichment. The company no longer operates independently; as of this enrichment pass the
-  domain www.icerasemi.com returns a shared-hosting error page with no live product, developer, API, or
-  documentation surface, so there is nothing beyond domain-level metadata to enrich.
+description: Icera Semiconductor (icerasemi.com) was a British fabless semiconductor company known for soft-modem
+  and baseband processor chipsets for wireless devices, and was acquired by NVIDIA in 2011. It was surfaced as a
+  portfolio lead of balderton-capital and added to the API Evangelist network as a stub for enrichment. The company
+  no longer operates independently; as of this enrichment pass the domain www.icerasemi.com returns a shared-hosting
+  error page with no live product, developer, API, or documentation surface, so there is nothing beyond domain-level
+  metadata to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/icerasemi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -27,7 +27,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-21'
 x-status: defunct-acquired
 tags:
 - Company
@@ -48,6 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/nvidia/
+  name: Nvidia
+  x-relationship: acquisition
+  x-generated-by: nvidia-family:2026-08-21
+  x-acquired: 2011
 - type: DomainSecurity
   url: security/icerasemi-domain-security.yml
 - type: Website
@@ -57,3 +63,6 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-parent: nvidia
+x-relationship: acquisition
+x-acquired: 2011
