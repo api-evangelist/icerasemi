@@ -39,19 +39,21 @@ x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-08-21'
-x-status: defunct-acquired
+x-status: defunct
 tags:
 - Company
 - Semiconductors
 - Modem
 - Wireless
 - Fabless
+- Defunct
 tags_raw:
 - Company
 - Semiconductor
 - Modem
 - Wireless
 - Fabless
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
